@@ -6,6 +6,7 @@
 import System.Environment
 import Data.Word
 import Numeric
+import Control.Exception
 
 import qualified Data.Map as M
 import qualified Data.ElfEdit as E
@@ -35,7 +36,8 @@ withMemory relaWidth e k =
         Left err -> error (show err)
         Right (_sim, mem) -> k mem
         
-main :: IO ()
-main = discoveryCode
+--main :: IO ()
+main = do
+    discoveryCode
 
 
