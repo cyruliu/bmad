@@ -37,7 +37,7 @@ withMemory relaWidth e k =
         Right (_sim, mem) -> k mem
         
 --main :: IO ()
-main = do
-    discoveryCode
+--main = do
+--    discoveryCode
 
 
